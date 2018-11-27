@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		81DF9F0B21AD56EA003A46B8 /* AwesomeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DF9F0921AD56EA003A46B8 /* AwesomeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81DF9F1221AD56F3003A46B8 /* AwesomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF9F1121AD56F3003A46B8 /* AwesomeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81DF9F0621AD56EA003A46B8 /* AwesomeButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DF9F0921AD56EA003A46B8 /* AwesomeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeButton.h; sourceTree = "<group>"; };
 		81DF9F0A21AD56EA003A46B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81DF9F1121AD56F3003A46B8 /* AwesomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				81DF9F0921AD56EA003A46B8 /* AwesomeButton.h */,
+				81DF9F1121AD56F3003A46B8 /* AwesomeButton.swift */,
 				81DF9F0A21AD56EA003A46B8 /* Info.plist */,
 			);
 			path = AwesomeButton;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					81DF9F0521AD56EA003A46B8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DF9F1221AD56F3003A46B8 /* AwesomeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		81DF9F0F21AD56EA003A46B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiyoza.AwesomeButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		81DF9F1021AD56EA003A46B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
